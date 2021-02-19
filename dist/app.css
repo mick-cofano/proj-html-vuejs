@@ -5,41 +5,62 @@
   font-family: "Roboto", sans-serif;
 }
 
-#general-container .header-top {
+#general-container .header {
+  position: relative;
+}
+#general-container .header-bg {
+  width: 100%;
+  height: 850px;
+  background-image: url(../img/home-business-hero-avatar.png), url(../img/home-business-hero-global-image.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #eceeef;
+}
+#general-container .header-bg-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#general-container .header-bg .header-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  width: 70vw;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
 }
-#general-container .header-top-logo {
+#general-container .header-bg .header-top-logo {
   width: 160px;
   margin-right: 100px;
 }
-#general-container .header-top-logo img {
+#general-container .header-bg .header-top-logo img {
   width: 160px;
 }
-#general-container .header-top .menu-navbar {
+#general-container .header-bg .header-top .menu-navbar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-#general-container .header-top .menu-navbar-center li {
+#general-container .header-bg .header-top .menu-navbar-center li {
   display: inline;
   list-style: none;
   cursor: pointer;
   padding: 30px;
 }
-#general-container .header-top .menu-navbar .menu-options {
+#general-container .header-bg .header-top .menu-navbar .menu-options {
   display: flex;
   position: relative;
-  right: 0;
+  margin-left: 300px;
 }
-#general-container .header-top .menu-navbar .menu-options-select {
+#general-container .header-bg .header-top .menu-navbar .menu-options-select {
   margin-left: 10px;
 }
-#general-container .header-top .menu-navbar .menu-options-search-bar {
+#general-container .header-bg .header-top .menu-navbar .menu-options-search-bar {
   margin-left: 30px;
+}
+#general-container .header-bg .jumbotron {
+  width: 1000px;
+  margin: 0 auto;
 }

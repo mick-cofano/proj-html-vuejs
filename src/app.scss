@@ -14,47 +14,75 @@
 #general-container {
 
 // HEADER -----------------------
-  .header-top {
-    @include flexCenter;
-    height: 100px;
-    width: 70vw;
-    background-color: white;
-    margin: 0 auto;
 
-    &-logo{
-      width: 160px;
-      img{width: 160px;}
-      margin-right: 100px;
-    }
-    // MENU CENTRALE NAVBAR -------
-    .menu-navbar {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+  .header {
+    position: relative;
 
-      &-center {
-        li {
-          display: inline;
-          list-style: none;
-          cursor: pointer;
-          padding: 30px;
+      &-bg {
+        width: 100%;
+        height: 850px;
+        background-image: url(../img/home-business-hero-avatar.png), url(../img/home-business-hero-global-image.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-color: #eceeef;
+
+
+        &-container {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+        }
+
+        // MENU CENTRALE NAVBAR -------
+
+        .header-top {
+          @include flexCenter;
+          justify-content: space-around;
+          height: 70px;
+          width: 100%;
+          background-color: white;
+          margin: 0 auto;
+
+          &-logo{
+            width: 160px;
+            img{width: 160px;}
+            margin-right: 100px;
+          }
+
+          .menu-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-center {
+              li {
+                display: inline;
+                list-style: none;
+                cursor: pointer;
+                padding: 30px;
+              }
+            }
+          // OPTIONS SEARCH + LANGUAGE
+          .menu-options {
+            display: flex;
+            position: relative;
+            margin-left: 300px;
+
+            &-select {
+              margin-left: 10px;
+            }
+
+            &-search-bar {
+              margin-left: 30px;
+            }
+          }
         }
       }
-      // OPTIONS SEARCH + LANGUAGE
-      .menu-options {
-        display: flex;
-        position: relative;
-        right: 0;
 
-        &-select {
-          margin-left: 10px;
-        }
-
-        &-search-bar {
-          margin-left: 30px;
-        }
+      .jumbotron {
+        width: 1000px;
+        margin: 0 auto;
       }
     }
-
   }
 }

@@ -38,7 +38,17 @@ new Vue({
       { text: 'English', value: 'English' },
       { text: 'Deutsche', value: 'Deutsche' },
 
+    ],
+
+    JumbotronTexts: [
+      {
+        subtitle: 'New Challenges, New Skills',
+        title: 'BUILD YOUR OWN LIFE COACHING BUSINESS',
+        text: 'Whole-life Business Coaching for committed entrepreneurs',
+      }
     ]
+
+
   },
 
   methods: {
