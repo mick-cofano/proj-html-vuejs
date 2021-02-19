@@ -10,17 +10,70 @@
     <link rel="stylesheet" href="dist/app.css">
   </head>
   <body>
-
+    <!-- ROOT - APP -->
     <div id="app">
 
 
+      <!-- LANDING PAGE -->
+      <div id="general-container">
 
+        <!-- HEADER -->
+        <header class="header-top">
+
+          <div class="header-top-logo">
+            <img src="img/dark-logo.png" alt="">
+          </div>
+
+
+          <div class="menu-navbar">
+            <div class="menu-navbar-center">
+              <ul>
+                <li v-for="item in CenterNavbar">
+                  {{item.obj}}
+                  <i class="fas fa-chevron-down"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-options">
+              <img src="img/en.png" alt="">
+
+              <select class="menu-options-select" v-model="selected">
+                <option v-for="option in options" v-bind:value="option.value">
+                  {{ option.text }}
+                </option>
+              </select>
+
+              <div class="menu-options-search-bar">
+                    <input type="text" placeholder="Search..." value="">
+                    <i class="fas fa-search"></i>
+                  </div>
+            </div>
+          </div>
+
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MAIN -->
+        <main>
+
+        </main>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <footer>
+
+        </footer>
+        <!-- END FOOTER -->
+
+      </div>
+      <!-- END LANDING PAGE -->
 
 
 
 
     </div>
-
+    <!-- END ROOT - APP -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

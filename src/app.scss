@@ -1,3 +1,60 @@
-body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#general-container {
+
+// HEADER -----------------------
+  .header-top {
+    @include flexCenter;
+    height: 100px;
+    width: 70vw;
+    background-color: white;
+    margin: 0 auto;
+
+    &-logo{
+      width: 160px;
+      img{width: 160px;}
+      margin-right: 100px;
+    }
+    // MENU CENTRALE NAVBAR -------
+    .menu-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &-center {
+        li {
+          display: inline;
+          list-style: none;
+          cursor: pointer;
+          padding: 30px;
+        }
+      }
+      // OPTIONS SEARCH + LANGUAGE
+      .menu-options {
+        display: flex;
+        position: relative;
+        right: 0;
+
+        &-select {
+          margin-left: 10px;
+        }
+
+        &-search-bar {
+          margin-left: 30px;
+        }
+      }
+    }
+
+  }
 }
