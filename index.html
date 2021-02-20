@@ -77,8 +77,27 @@
         <!-- END HEADER -->
 
         <!-- MAIN -->
-        <main>
+        <main class="main">
+          <!-- FIRST SECTION -->
+          <div class="first-section">
+            <div class="first-section-text">
+              <h2 v-for="text in MainFirstSection">{{text.title}}</h2>
+              <h3 v-for="text in MainFirstSection">{{text.description}}</h3>
+            </div>
 
+            <div class="first-section-boxes">
+              <div class="first-section-boxes-boxlist" v-for="text in MainFirstSection">
+                <h2>{{text.boxTitle}}</h2>
+                <p>{{text.boxDescription}}</p>
+              </div>
+            </div>
+
+            <div class="first-section-buttons">
+              <button type="button" name="button">Learn more</button>
+              <button type="button" name="button">Get started today</button>
+            </div>
+          </div>
+          <!-- FIRST SECTION -->
         </main>
         <!-- END MAIN -->
 
