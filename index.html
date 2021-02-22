@@ -185,7 +185,33 @@
           <!-- FOURTH SECTION -->
 
           <!-- FIFTH SECTION -->
+          <div class="fifth-section">
+            <div class="fifth-section-text">
+              <h2>Wanna transform your life?</h2>
+              <h3>Upcoming Events</h3>
+            </div>
+
+            <div class="fifth-section-boxes">
+              <div class="fifth-section-boxes-boxlist" v-for="element in MainFifthSectionBoxes">
+                <div class="box-wherewhat">
+                  <h3><i class="fa fa-map-marker" aria-hidden="true">{{element.location}}</i></h3>
+                  <h2>{{element.title}}</h2>
+                </div>
+                <div class="box-date">
+                  <h2>{{element.dateNum}}</h2>
+                  <h3>{{element.dateMon}}</h3>
+                  <button type="button" name="button">Get ticket</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <!-- FIFTH SECTION -->
+
+
+
+          <!-- SIXTH SECTION -->
+          <!-- SIXTH SECTION -->
 
         </main>
         <!-- END MAIN -->

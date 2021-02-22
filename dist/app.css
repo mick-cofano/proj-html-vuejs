@@ -187,3 +187,32 @@
   height: 100%;
   border: 1px solid black;
 }
+#general-container .main .fifth-section {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+}
+#general-container .main .fifth-section-text {
+  text-align: center;
+}
+#general-container .main .fifth-section-boxes {
+  width: 1500px;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#general-container .main .fifth-section-boxes-boxlist {
+  width: 48%;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+#general-container .main .fifth-section-boxes-boxlist .box-wherewhat {
+  width: 75%;
+}
+#general-container .main .fifth-section-boxes-boxlist .box-date {
+  width: 25%;
+}

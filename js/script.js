@@ -131,6 +131,45 @@ new Vue({
       },
     ],
 
+    MainFifthSectionBoxes: [
+      {
+        location: 'Texas, US',
+        title: 'Storytelling Workshop',
+        dateNum: '22',
+        dateMon: 'NOV',
+      },
+      {
+        location: 'New York, US',
+        title: 'Painting Art Contest 2020',
+        dateNum: '10',
+        dateMon: 'OCT',
+      },
+      {
+        location: 'Hamburg, Germany',
+        title: 'International Art Fair 2020',
+        dateNum: '23',
+        dateMon: 'NOV',
+      },
+      {
+        location: 'Illinois, US',
+        title: 'Street Performance: Call for Artist',
+        dateNum: '15',
+        dateMon: 'DEC',
+      },
+      {
+        location: 'Illinois, US',
+        title: 'Consumer Food Safety Education Conference',
+        dateNum: '22',
+        dateMon: 'JUL',
+      },
+      {
+        location: 'Dubai',
+        title: 'How meditation improve your mental health?',
+        dateNum: '12',
+        dateMon: 'AUG',
+      },
+    ]
+
   },
 
   methods: {
