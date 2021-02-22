@@ -106,7 +106,30 @@ new Vue({
         boxTitle: 'Advisor Training Program',
         boxDescription: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.'
       },
-    ]
+    ],
+
+    MainThirdSectionBoxes: [
+      {
+        img: '-1',
+        price: '$40.00',
+        description: 'Learning to Write as a Professional Author',
+      },
+      {
+        img: '-2',
+        price: 'Free',
+        description: 'Customer-centric-Info-Tech Strategies',
+      },
+      {
+        img: '-3',
+        price: '$19.00',
+        description: 'Open Programming Courses for Everyone: Python',
+      },
+      {
+        img: '-4',
+        price: '$26.00',
+        description: 'Academic Listening and Note-taking',
+      },
+    ],
 
   },
 

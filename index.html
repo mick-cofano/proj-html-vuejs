@@ -104,13 +104,13 @@
 
           <div class="second-section">
 
-            <div class="second-section-container">
-              <div class="title-text">
+              <div class="second-section-text">
                 <h2 v-for="text in MainSecondSectionText">{{text.title}}</h2>
                 <h3 v-for="text in MainSecondSectionText">{{text.description}}</h3>
               </div>
 
               <div class="second-section-boxes" v-for="element in MainSecondSectionBoxes">
+
                 <div class="second-section-boxes-boxlist">
 
                   <div class="second-section-boxes-boxlist-images">
@@ -125,7 +125,7 @@
 
                 </div>
               </div>
-            </div>
+
 
           </div>
 
@@ -133,8 +133,35 @@
 
 
           <!-- THIRD SECTION -->
+          <div class="third-section">
 
+            <div class="third-section-text">
+              <h2>Let's dream big together</h2>
+              <h3>Explore How can I help you</h3>
+            </div>
+
+            <div class="third-section-boxes">
+
+              <div class="third-section-boxes-boxlist" v-for="item in MainThirdSectionBoxes">
+                <img :src="'./img/course'+ item.img +'.jpg'" alt="">
+                <h2>{{item.price}}</h2>
+                <h3>{{item.description}}</h3>
+              </div>
+
+
+            </div>
+
+            <div class="third-section-footer">
+              <h2>Take the control of their life back and start doing things to make their dream come true.
+                  <span>View all courses</span>
+              </h2>
+            </div>
+
+          </div>
           <!-- THIRD SECTION -->
+
+          <!-- FOURTH SECTION -->
+          <!-- FOURTH SECTION -->
         </main>
         <!-- END MAIN -->
 

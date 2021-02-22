@@ -92,22 +92,54 @@
   text-align: center;
 }
 #general-container .main .second-section {
-  height: 1000px;
+  height: 2000px;
   width: 100%;
   background-color: #eceeef;
 }
-#general-container .main .second-section-container .title-text {
+#general-container .main .second-section-text {
   text-align: center;
 }
-#general-container .main .second-section-container .second-section-boxes {
+#general-container .main .second-section-boxes {
   width: 1500px;
   height: 500px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-#general-container .main .second-section-container .second-section-boxes-boxlist {
+#general-container .main .second-section-boxes-boxlist {
   width: 32%;
   height: 100%;
   border: 1px solid black;
+}
+#general-container .main .third-section {
+  height: 800px;
+  width: 100%;
+  background-color: white;
+}
+#general-container .main .third-section-text {
+  text-align: center;
+}
+#general-container .main .third-section-boxes {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#general-container .main .third-section-boxes-boxlist {
+  width: 20%;
+  height: 100%;
+  border: 1px solid black;
+  margin: 50px;
+}
+#general-container .main .third-section-boxes-boxlist img {
+  width: 100%;
+  height: auto;
+}
+#general-container .main .third-section-footer {
+  margin-top: 50px;
+  border: 1px solid black;
+  text-align: center;
 }
