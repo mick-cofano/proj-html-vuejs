@@ -81,23 +81,60 @@
           <!-- FIRST SECTION -->
           <div class="first-section">
             <div class="first-section-text">
-              <h2 v-for="text in MainFirstSection">{{text.title}}</h2>
-              <h3 v-for="text in MainFirstSection">{{text.description}}</h3>
+              <h2 v-for="text in MainFirstSectionText">{{text.title}}</h2>
+              <h3 v-for="text in MainFirstSectionText">{{text.description}}</h3>
             </div>
 
             <div class="first-section-boxes">
-              <div class="first-section-boxes-boxlist" v-for="text in MainFirstSection">
+              <div class="first-section-boxes-boxlist" v-for="text in MainFirstSectionBoxes">
                 <h2>{{text.boxTitle}}</h2>
                 <p>{{text.boxDescription}}</p>
               </div>
+              <div class="first-section-buttons">
+                <button type="button" name="button">Learn more</button>
+                <button type="button" name="button">Get started today</button>
+              </div>
             </div>
 
-            <div class="first-section-buttons">
-              <button type="button" name="button">Learn more</button>
-              <button type="button" name="button">Get started today</button>
-            </div>
+
           </div>
           <!-- FIRST SECTION -->
+
+          <!-- SECOND SECTION -->
+
+          <div class="second-section">
+
+            <div class="second-section-container">
+              <div class="title-text">
+                <h2 v-for="text in MainSecondSectionText">{{text.title}}</h2>
+                <h3 v-for="text in MainSecondSectionText">{{text.description}}</h3>
+              </div>
+
+              <div class="second-section-boxes" v-for="element in MainSecondSectionBoxes">
+                <div class="second-section-boxes-boxlist">
+
+                  <div class="second-section-boxes-boxlist-images">
+                    <img :src="'./img/home-business-service-slide'+ element.img +'.jpg'" alt="">
+                  </div>
+
+
+                  <div class="second-section-boxes-boxlist-description">
+                    <h2>{{element.boxTitle}}</h2>
+                    <h3>{{element.boxDescription}}</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- SECOND SECTION -->
+
+
+          <!-- THIRD SECTION -->
+
+          <!-- THIRD SECTION -->
         </main>
         <!-- END MAIN -->
 

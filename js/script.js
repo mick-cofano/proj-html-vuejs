@@ -48,11 +48,15 @@ new Vue({
       }
     ],
 
-    MainFirstSection: [
+    MainFirstSectionText: [
       {
-        title: 'Lets Dream Big Together',
+        title: 'Let\'s Dream Big Together',
         description: 'We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization',
       },
+
+    ],
+
+    MainFirstSectionBoxes: [
       {
         boxTitle: 'One to One',
         boxDescription: 'Getting the necessary clarity about the current state to help you improve your game.',
@@ -79,6 +83,30 @@ new Vue({
       },
     ],
 
+    MainSecondSectionText: [
+      {
+        title: 'Let\'s Dream Big Together',
+        description: 'Explore How can I help you',
+      }
+    ],
+
+    MainSecondSectionBoxes: [
+      {
+        img: '-01',
+        boxTitle: 'Consultative Training',
+        boxDescription: 'With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.'
+      },
+      {
+        img: '-02',
+        boxTitle: 'Real Deal Coaching',
+        boxDescription: 'Brings an exceptionally powerful opportunity. Being able to accept, to work with that opportunity.'
+      },
+      {
+        img: '-03',
+        boxTitle: 'Advisor Training Program',
+        boxDescription: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.'
+      },
+    ]
 
   },
 
