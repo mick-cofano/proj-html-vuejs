@@ -266,7 +266,7 @@
 
         &-boxlist {
           width: 48%;
-          height: 300px;
+          height: 200px;
           border: 1px solid black;
           display: flex;
           flex-wrap: wrap;
@@ -277,6 +277,43 @@
 
           .box-date {
             width: 25%;
+          }
+        }
+      }
+    }
+
+
+    .sixth-section {
+      height: 1000px;
+      width: 100%;
+      background-color: #eceeef;
+
+      &-text {
+        text-align: center;
+      }
+
+      &-boxes {
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-boxlist {
+          width: 25%;
+          height: 500px;
+          border: 1px solid black;
+          margin: 3%;
+
+          .comments {
+            height: 50%;
+            width: 100%;
+          }
+
+          .profiles {
+            height: 50%;
+            width: 100%;
           }
         }
       }

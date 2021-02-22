@@ -211,6 +211,27 @@
 
 
           <!-- SIXTH SECTION -->
+
+          <div class="sixth-section">
+            <div class="sixth-section-text">
+
+            </div>
+
+            <div class="sixth-section-boxes">
+              <div class="sixth-section-boxes-boxlist" v-for="element in MainSixthSectionBoxes">
+                <div class="comments">
+                  <h2>{{element.title}}</h2>
+                  <h3>{{element.description}}</h3>
+                </div>
+
+                <div class="profiles">
+                  <img :src="'./img/testimonial'+ element.profileImg +'.jpg'" alt="">
+                  <span>{{element.profileName}}<br>{{element.profileProf}}</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <!-- SIXTH SECTION -->
 
         </main>

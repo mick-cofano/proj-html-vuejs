@@ -168,7 +168,31 @@ new Vue({
         dateNum: '12',
         dateMon: 'AUG',
       },
-    ]
+    ],
+
+    MainSixthSectionBoxes: [
+      {
+        title: 'It\'s a choice of quality for people with special needs',
+        description: 'I\'m a very strict person so I require everything to be organized and neat. Then, I\'ll be able to make things right and shine. MaxCoach guys just got me.',
+        profileImg: '-01',
+        profileName: 'FLORENCE THEMES',
+        profileProf: '/ Multimedia Admin',
+      },
+      {
+        title: 'High level of efficiency and scientific teaching methods',
+        description: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
+        profileImg: '-02',
+        profileName: 'MINA HOLLACE',
+        profileProf: '/ Freelancer',
+      },
+      {
+        title: 'Professional team of specialists and passionate mentors at reach',
+        description: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+        profileImg: '-03',
+        profileName: 'MADLEY PONDOR',
+        profileProf: '/ IT Specialist',
+      },
+    ],
 
   },
 

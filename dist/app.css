@@ -205,7 +205,7 @@
 }
 #general-container .main .fifth-section-boxes-boxlist {
   width: 48%;
-  height: 300px;
+  height: 200px;
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -215,4 +215,34 @@
 }
 #general-container .main .fifth-section-boxes-boxlist .box-date {
   width: 25%;
+}
+#general-container .main .sixth-section {
+  height: 1000px;
+  width: 100%;
+  background-color: #eceeef;
+}
+#general-container .main .sixth-section-text {
+  text-align: center;
+}
+#general-container .main .sixth-section-boxes {
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#general-container .main .sixth-section-boxes-boxlist {
+  width: 25%;
+  height: 500px;
+  border: 1px solid black;
+  margin: 3%;
+}
+#general-container .main .sixth-section-boxes-boxlist .comments {
+  height: 50%;
+  width: 100%;
+}
+#general-container .main .sixth-section-boxes-boxlist .profiles {
+  height: 50%;
+  width: 100%;
 }
