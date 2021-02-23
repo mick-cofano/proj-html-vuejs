@@ -1,3 +1,4 @@
+// COMMON USE
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,10 +18,14 @@
   margin: 0 auto;
 }
 
+@mixin greenText {
+  color: #20ad96;
+}
+
+// GENERAL CONTAINER ----------------------
 #general-container {
 
 // HEADER -----------------------
-
   .header {
     position: relative;
 
@@ -66,6 +71,7 @@
                 list-style: none;
                 cursor: pointer;
                 padding: 30px;
+                color: #3F3A64;
               }
             }
           // OPTIONS SEARCH + LANGUAGE
@@ -85,30 +91,92 @@
         }
       }
 
+// JUMBOTRON SETTINGS -----------------------------
       .jumbotron {
-        width: 1000px;
-        margin: 0 auto;
+        width: 500px;
+        height: 100%;
+        margin-left: 25%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h3 {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 500;
+          color: #20ad96;
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          font-size: 48px;
+          line-height: 56px;
+          font-weight: 800;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #3f3a64;
+          margin: 20px 0px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.67;
+          color: #8c89a2;
+        }
+
+        button {
+          background-color: #1eae96;
+          color: white;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 50px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 40px;
+          cursor: pointer;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          outline: 0;
+          height: 52px;
+          margin: 20px 0px;
+        }
       }
     }
   }
 
 
 
-  // MAIN CONTENT -----------------------
+// MAIN CONTENT -----------------------
 
   .main {
     position: relative;
 
 
-
+// FIRST SECTION -------------------------
     .first-section {
       width: 100%;
-      height: 800px;
+      height: 1000px;
       background-color: white;
 
       &-text {
+        width: 1000px;
         text-align: center;
         padding: 30px;
+        margin: 0 auto;
+        h2{
+          font-size: 24px;
+          font-weight: 500;
+          color: #20ad96;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-size: 34px;
+          line-height: 1.42;
+          margin: 0;
+          color: #333;
+        }
       }
 
       &-boxes {
@@ -120,17 +188,70 @@
 
         &-boxlist {
           width: 33%;
-          height: 300px;
-          border: 1px solid black;
-        }
+          height: 200px;
+          display: flex;
+          align-items: flex-start;
 
-        &-buttons {
-          text-align: center;
+          .content {
+            flex-grow: 1;
+            padding: 15px;
+
+            h2 {
+              font-size: 24px;
+              line-height: 1.5;
+              font-weight: 600;
+              margin: 0;
+            }
+            p {
+              line-height: 1.6;
+              margin-top: 20px;
+              color: #696969;
+            }
+          }
         }
 
       }
+
+      &-buttons {
+        text-align: center;
+
+        .learn-more {
+          border: 2px solid #eee;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 50px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 40px;
+          cursor: pointer;
+          border-radius: 5px;
+          height: 52px;
+          color: #20ad96;
+          background-color: white;
+          margin: 15px;
+        }
+
+        .get-started {
+          background-color: #1eae96;
+          color: white;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 50px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 40px;
+          cursor: pointer;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          height: 52px;
+          margin: 15px;
+        }
+      }
     }
 
+// SECOND SECTION -----------------------------
     .second-section {
       height: 2000px;
       width: 100%;

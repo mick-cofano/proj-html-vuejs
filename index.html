@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Project Max Coach</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <link rel="stylesheet" href="dist/app.css">
@@ -34,7 +34,7 @@
                     <ul>
                       <li v-for="item in CenterNavbar">
                         {{item.obj}}
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down fa-xs"></i>
                       </li>
                     </ul>
                   </div>
@@ -49,6 +49,7 @@
                     </select>
 
                     <div class="menu-options-search-bar">
+                          <i class="fa fa-user-circle-o"></i>
                           <input type="text" placeholder="Search..." value="">
                           <i class="fas fa-search"></i>
                         </div>
@@ -58,18 +59,17 @@
 
 
               <div class="jumbotron">
-                <div class="jumbotron-subtitle">
+
+                <div class="jumbotron-content">
                   <h3 v-for="text in JumbotronTexts"> {{text.subtitle}} </h3>
-                </div>
-                <div class="jumbotron-title">
-                  <h2 v-for="text in JumbotronTexts"> {{text.title}} </h2>
-                </div>
-                <div class="jumbotron-text">
-                  <p v-for="text in JumbotronTexts"> {{text.text}} </p>
-                </div>
-                <div class="jumbotron-button">
+
+                  <h2 v-for="text in JumbotronTexts"> <strong>{{text.title}}</strong> </h2>
+
+                  <p v-for="text in JumbotronTexts"> <strong>{{text.text}}</strong> </p>
+
                   <button type="button" name="button">Get started today</button>
                 </div>
+
               </div>
             </div>
           </div>
@@ -78,6 +78,7 @@
 
         <!-- MAIN -->
         <main class="main">
+
           <!-- FIRST SECTION -->
           <div class="first-section">
             <div class="first-section-text">
@@ -87,15 +88,23 @@
 
             <div class="first-section-boxes">
               <div class="first-section-boxes-boxlist" v-for="text in MainFirstSectionBoxes">
-                <h2>{{text.boxTitle}}</h2>
-                <p>{{text.boxDescription}}</p>
+                <div class="icons">
+                  <img :src="'./img/first-section'+ text.imgID +'.svg'" alt="">
+                </div>
+
+                <div class="content">
+                  <h2>{{text.boxTitle}}</h2>
+                  <p>{{text.boxDescription}}</p>
+                </div>
               </div>
-              <div class="first-section-buttons">
-                <button type="button" name="button">Learn more</button>
-                <button type="button" name="button">Get started today</button>
-              </div>
+
+
             </div>
 
+            <div class="first-section-buttons">
+              <button class="learn-more" type="button" name="button">Learn more</button>
+              <button class="get-started" type="button" name="button">Get started today</button>
+            </div>
 
           </div>
           <!-- FIRST SECTION -->
@@ -261,6 +270,8 @@
 
 
     </div>
+    <!-- END ROOT - APP -->
+
 
     <!-- FOOTER -->
     <footer id="footer">
@@ -309,7 +320,6 @@
 
     </footer>
     <!-- END FOOTER -->
-    <!-- END ROOT - APP -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

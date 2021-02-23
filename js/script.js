@@ -51,33 +51,39 @@ new Vue({
     MainFirstSectionText: [
       {
         title: 'Let\'s Dream Big Together',
-        description: 'We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization',
+        description: 'We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization.',
       },
 
     ],
 
     MainFirstSectionBoxes: [
       {
+        imgID: '-1',
         boxTitle: 'One to One',
         boxDescription: 'Getting the necessary clarity about the current state to help you improve your game.',
       },
       {
+        imgID: '-2',
         boxTitle: 'Anywhere',
         boxDescription: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
       },
       {
+        imgID: '-3',
         boxTitle: 'On Time',
         boxDescription: 'Puntuality is our top priority because it\'s an essencial criteria to assess a program quality.',
       },
       {
+        imgID: '-4',
         boxTitle: 'Online Coures',
         boxDescription: 'Online business coaching now offers you a very powerful way to empower your business into success.',
       },
       {
+        imgID: '-5',
         boxTitle: 'Consulting',
         boxDescription: 'You will get a clear sense of direction for your business, thorough assessment and faster results.',
       },
       {
+        imgID: '-6',
         boxTitle: 'Self Development',
         boxDescription: 'Business Coaching often keep your focus and develop you both in a professional and personal way.',
       },
