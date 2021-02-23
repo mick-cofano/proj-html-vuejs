@@ -226,7 +226,7 @@
 
                 <div class="profiles">
                   <img :src="'./img/testimonial'+ element.profileImg +'.jpg'" alt="">
-                  <span>{{element.profileName}}<br>{{element.profileProf}}</span>
+                  <span>{{element.profileName}}{{element.profileProf}}</span>
                 </div>
               </div>
 
@@ -234,14 +234,25 @@
           </div>
           <!-- SIXTH SECTION -->
 
+
+          <!-- SEVENTH SECTION -->
+          <div class="seventh-section">
+
+            <div class="seventh-section-text">
+              <h2>Subscribe Newsletters</h2>
+              <h3>Enter your email address to register to our newsletter subscription delivered on a regular basis!</h3>
+            </div>
+
+            <div class="seventh-section-mail">
+              <input type="text" name="" value=""placeholder="Enter your email">
+              <button type="button" name="button">Subscribe</button>
+            </div>
+          </div>
+          <!-- SEVENTH SECTION -->
         </main>
         <!-- END MAIN -->
 
-        <!-- FOOTER -->
-        <footer>
 
-        </footer>
-        <!-- END FOOTER -->
 
       </div>
       <!-- END LANDING PAGE -->
@@ -250,6 +261,54 @@
 
 
     </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+      <div class="content-container">
+
+        <!-- INDIRIZZO E SOCIAL -->
+        <div id="contact">
+          <h4>Address</h4>
+          <ul>
+            <li v-for="(value,name) in contact">{{value}}</li>
+          </ul>
+          <ul id="social">
+            <li v-for="item in social"><a :href="item.link"><i :class="item.icon" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- NAV BAR FOOTER -->
+        <nav id="navbar-footer">
+          <div class="column">
+            <h4>Explore</h4>
+            <ul>
+              <li v-for="item in firstcolumn"><a :href="item.link">{{item.text}}</a></li>
+            </ul>
+          </div>
+          <div class="column second">
+            <h4></h4>
+            <ul>
+              <li v-for="item in secondcolumn"><a :href="item.link">{{item.text}}</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Information</h4>
+            <ul>
+              <li v-for="item in thirdcolumn"><a :href="item.link">{{item.text}}</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div id="copyright">
+          <span><i class="fa fa-copyright" aria-hidden="true"></i>2020 MaxCoach. All Rights Reserved.</span>
+        </div>
+
+      </div> <!--fine content container-->
+
+    </footer>
+    <!-- END FOOTER -->
     <!-- END ROOT - APP -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
