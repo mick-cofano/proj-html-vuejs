@@ -269,7 +269,7 @@
           margin-bottom: 30px;
         }
         h3 {
-          font-size: 34px;
+          font-size: 50px;
           line-height: 1.42;
           margin: 0;
           color: #333;
@@ -349,7 +349,7 @@
           margin-bottom: 30px;
         }
         h3 {
-          font-size: 34px;
+          font-size: 50px;
           line-height: 1.42;
           margin: 0;
           color: #333;
@@ -416,6 +416,7 @@
       }
     }
 
+// FOURTH SECTION -----------------------------
     .fourth-section {
       height: 800px;
       width: 100%;
@@ -492,36 +493,88 @@
 
     }
 
+// FIFTH SECTION ------------------------------
     .fifth-section {
       height: 1000px;
       width: 100%;
       background-color: white;
 
       &-text {
+        width: 1000px;
         text-align: center;
+        padding: 30px;
+        margin: 0 auto;
+        h2{
+          font-size: 24px;
+          font-weight: 500;
+          color: #20ad96;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-size: 50px;
+          line-height: 1.42;
+          margin: 0;
+          color: #333;
+        }
       }
 
       &-boxes {
         width: 1500px;
-        height: 1000px;
+        height: 800px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
+
         &-boxlist {
           width: 48%;
-          height: 200px;
-          border: 1px solid black;
+          height: 220px;
           display: flex;
           flex-wrap: wrap;
+          background-color: #eceeef;
+          border-radius: 5px;
+
 
           .box-wherewhat {
             width: 75%;
+            padding: 40px;
+            h3 {
+              font-size: 14px;
+              color: #7e7e7e;
+              margin-bottom: 15px;
+              cursor: pointer;
+            }
           }
 
           .box-date {
             width: 25%;
+            padding: 40px;
+            text-align: center;
+            h2 {
+              font-size: 60px;
+              line-height: 1;
+              color: #20ad96;
+            }
+            h3 {
+              margin: 10px 0px;
+            }
+            button {
+              background-color: #1eae96;
+              color: white;
+              font-size: 14px;
+              font-weight: 700;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0 10px;
+              cursor: pointer;
+              border: 1px solid transparent;
+              border-radius: 5px;
+              outline: 0;
+              height: 40px;
+              width: 100px;
+            }
           }
         }
       }
