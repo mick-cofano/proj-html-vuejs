@@ -118,9 +118,9 @@
                 <h3 v-for="text in MainSecondSectionText">{{text.description}}</h3>
               </div>
 
-              <div class="second-section-boxes" v-for="element in MainSecondSectionBoxes">
+              <div class="second-section-boxes">
 
-                <div class="second-section-boxes-boxlist">
+                <div class="second-section-boxes-boxlist" v-for="element in MainSecondSectionBoxes">
 
                   <div class="second-section-boxes-boxlist-images">
                     <img :src="'./img/home-business-service-slide'+ element.img +'.jpg'" alt="">
@@ -129,7 +129,12 @@
 
                   <div class="second-section-boxes-boxlist-description">
                     <h2>{{element.boxTitle}}</h2>
-                    <h3>{{element.boxDescription}}</h3>
+                    <p>{{element.boxDescription}}</p>
+                  </div>
+
+                  <div class="second-section-boxes-boxlist-discover">
+                    <span>Discover now</span>
+                    <i class="fas fa-arrow-right"></i>
                   </div>
 
                 </div>
@@ -152,18 +157,26 @@
             <div class="third-section-boxes">
 
               <div class="third-section-boxes-boxlist" v-for="item in MainThirdSectionBoxes">
-                <img :src="'./img/course'+ item.img +'.jpg'" alt="">
-                <h2>{{item.price}}</h2>
-                <h3>{{item.description}}</h3>
+                <div class="images">
+                  <img :src="'./img/course'+ item.img +'.jpg'" alt="">
+                </div>
+
+                <div class="info">
+                  <h2>{{item.price}}</h2>
+                  <h3>{{item.description}}</h3>
+                </div>
+
               </div>
 
 
             </div>
 
             <div class="third-section-footer">
-              <h2>Take the control of their life back and start doing things to make their dream come true.
-                  <span>View all courses</span>
-              </h2>
+              <div class="third-section-footer-container">
+                <h2>Take the control of their life back and start doing things to make their dream come true.
+                    <span>View all courses <i class="fas fa-arrow-right"></i></span>
+                </h2>
+              </div>
             </div>
 
           </div>
@@ -175,17 +188,20 @@
               <div class="fourth-section-boxes">
                 <div class="fourth-section-boxes-boxlist">
                   <div class="fourth-section-boxes-boxlist-video">
-                    <div class="background">
+                    <div class="preview">
+                      <img src="img/home-business-video-poster-670x450.jpg" alt="">
+                    </div>
+                    <div class="youtube-icon">
                       <img src="img/icon-youtube-play.png" alt="">
                     </div>
                   </div>
 
                   <div class="fourth-section-boxes-boxlist-description">
                     <h2>To Thrive In Business Today, You'll Need a Good Plan</h2>
-                    <h3>How can we help?</h3>
+                    <h3><i class="fas fa-chevron-circle-up"></i> How can we help?</h3>
                     <p>How many courses you've been on, using however many techniques and methods. Unless you've come to realize the value of mindset, then you've yet to understand how success comes.</p>
-                    <h3>Why would I need a business COACH?</h3>
-                    <h3>What is one-on-one coaching?</h3>
+                    <h3><i class="fas fa-chevron-circle-up"></i> Why would I need a business COACH?</h3>
+                    <h3><i class="fas fa-chevron-circle-up"></i> What is one-on-one coaching?</h3>
                   </div>
                 </div>
               </div>
