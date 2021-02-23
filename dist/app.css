@@ -492,29 +492,70 @@
   background-color: #eceeef;
 }
 #general-container .main .sixth-section-text {
+  width: 1000px;
   text-align: center;
+  padding: 30px;
+  margin: 0 auto;
+}
+#general-container .main .sixth-section-text h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #20ad96;
+  margin-bottom: 30px;
+}
+#general-container .main .sixth-section-text h3 {
+  font-size: 50px;
+  line-height: 1.42;
+  margin: 0;
+  color: #333;
 }
 #general-container .main .sixth-section-boxes {
   width: 100%;
-  height: 750px;
+  height: 500px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 #general-container .main .sixth-section-boxes-boxlist {
   width: 25%;
   height: 500px;
-  border: 1px solid black;
-  margin: 3%;
+  padding: 50px;
 }
 #general-container .main .sixth-section-boxes-boxlist .comments {
   height: 50%;
   width: 100%;
 }
+#general-container .main .sixth-section-boxes-boxlist .comments h2 {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: darkblue;
+}
+#general-container .main .sixth-section-boxes-boxlist .comments h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.67;
+  color: #797979;
+}
 #general-container .main .sixth-section-boxes-boxlist .profiles {
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+#general-container .main .sixth-section-boxes-boxlist .profiles img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+#general-container .main .sixth-section-boxes-boxlist .profiles-info {
+  margin-left: 20px;
+}
+#general-container .main .sixth-section-boxes-boxlist .profiles-info h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: darkblue;
 }
 #general-container .main .seventh-section {
   height: 500px;
@@ -522,10 +563,60 @@
   background-color: white;
 }
 #general-container .main .seventh-section-text {
+  width: 1000px;
   text-align: center;
+  padding: 30px;
+  margin: 0 auto;
+}
+#general-container .main .seventh-section-text h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #20ad96;
+  margin-bottom: 30px;
+}
+#general-container .main .seventh-section-text h2 span {
+  color: black;
+}
+#general-container .main .seventh-section-text h3 {
+  font-size: 24px;
+  line-height: 1.42;
+  margin: 0;
+  color: #333;
 }
 #general-container .main .seventh-section-mail {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#general-container .main .seventh-section-mail input {
+  width: 700px;
+  height: 52px;
+  background-color: #eceeef;
+  font-size: 25px;
+  color: #696969;
+  border-radius: 5px;
+  outline: 0;
+  padding: 3px 60px 3px 20px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+}
+#general-container .main .seventh-section-mail button {
+  border-radius: 0 5px 5px 0;
+  width: 160px;
+  background-color: #20ad96;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: 0;
+  height: 52px;
 }
 
 /******* FOOTER *******/
@@ -535,7 +626,7 @@ footer {
   min-height: 350px;
   width: 100%;
   color: #ababab;
-  background-color: #171520;
+  background-color: #282935;
 }
 
 .content-container {

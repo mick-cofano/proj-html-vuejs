@@ -242,7 +242,8 @@
 
           <div class="sixth-section">
             <div class="sixth-section-text">
-
+              <h2>People are praising Maxcoach</h2>
+              <h3>What make they love us?</h3>
             </div>
 
             <div class="sixth-section-boxes">
@@ -253,8 +254,13 @@
                 </div>
 
                 <div class="profiles">
-                  <img :src="'./img/testimonial'+ element.profileImg +'.jpg'" alt="">
-                  <span>{{element.profileName}}{{element.profileProf}}</span>
+                  <div class="profiles-images">
+                    <img :src="'./img/testimonial'+ element.profileImg +'.jpg'" alt="">
+                  </div>
+                  <div class="profiles-info">
+                    <h2>{{element.profileName}}</h2>
+                    <h3>{{element.profileProf}}</h3>
+                  </div>
                 </div>
               </div>
 
@@ -267,7 +273,7 @@
           <div class="seventh-section">
 
             <div class="seventh-section-text">
-              <h2>Subscribe Newsletters</h2>
+              <h2><span>Subscribe </span>Newsletters</h2>
               <h3>Enter your email address to register to our newsletter subscription delivered on a regular basis!</h3>
             </div>
 

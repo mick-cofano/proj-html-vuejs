@@ -213,7 +213,7 @@ var footer= new Vue({
   data: {
     contact: {
       address: "382 NE 191st St # 87394 Miami, FL 33179 - 33899",
-      telephone: "+1(305)547-99(9am - 5pm EST, Monday - Friday)",
+      telephone: "+1 (305) 547-9909(9am - 5pm EST, Monday - Friday)",
       email: "support@maxcoach.com"
     },
     firstcolumn: [
